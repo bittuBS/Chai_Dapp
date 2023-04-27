@@ -27,7 +27,21 @@
 .App-link {
   color: #61dafb;
 }
+.img{
+  z-index: 12px;
+  position: absolute;
+}
+.inner-div{
+  z-index: 50px;
+  position: relative;
 
+}
+ #acc{
+  color: white;
+  font-size: larger;
+  
+  
+ }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
