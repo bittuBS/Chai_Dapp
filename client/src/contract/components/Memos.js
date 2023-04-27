@@ -1,4 +1,5 @@
 import {useState,useEffect} from 'react';
+import"./Memos.css";
 const Memos=({state})=>{
     const [memos,setMemos]=useState([]);
     const {contract}=state;
@@ -14,10 +15,10 @@ const Memos=({state})=>{
 
   return (
     <>
-      <h1>hello</h1>
-      {memos.map((memo)=>{
+      
+      {memos.map((memo,ind)=>{
         return(
-      <table key={memo.timestamp}>
+      <table id='memo' key={ind}>
         <tbody>
             <tr>
                 <td>{memo.name}</td>
